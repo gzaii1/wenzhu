@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "rimraf dist && npx webpack serve",
+    "build": "rimraf dist && npm run lint && run-s build-bundle build-types",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "guohan",

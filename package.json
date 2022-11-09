@@ -1,9 +1,15 @@
 {
-  "name": "wenzhu",
+  "private": true,
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=3"
+  },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "run-s build-main",
+    "build-main": "cd packages/wz-main && npm run build",
+    "start": "npx webpack serve --config=scripts/build/start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,10 +23,15 @@
   },
   "homepage": "https://github.com/gzaii1/wenzhu#readme",
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "rimraf": "^3.0.2",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "npm-run-all": "^4.1.5",
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4"
   }
