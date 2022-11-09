@@ -1,0 +1,19 @@
+{
+  "name": "wenzhu",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzaii1/wenzhu.git"
+  },
+  "author": "guohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gzaii1/wenzhu/issues"
+  },
+  "homepage": "https://github.com/gzaii1/wenzhu#readme"
+}
