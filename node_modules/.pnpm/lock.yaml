@@ -1,28 +1,29 @@
 lockfileVersion: 5.3
 
-specifiers:
-  cross-env: ^7.0.3
-  html-webpack-plugin: ^5.5.0
-  npm-run-all: ^4.1.5
-  rimraf: ^3.0.2
-  ts-loader: ^9.4.1
-  typescript: ^4.8.4
-  webpack: ^5.74.0
-  webpack-cli: ^4.10.0
-  webpack-dev-server: ^4.11.1
+importers:
 
-dependencies:
-  npm-run-all: registry.npmmirror.com/npm-run-all/4.1.5
-  ts-loader: registry.npmmirror.com/ts-loader/9.4.1_typescript@4.8.4+webpack@5.74.0
-  typescript: registry.npmmirror.com/typescript/4.8.4
-
-devDependencies:
-  cross-env: registry.npmmirror.com/cross-env/7.0.3
-  html-webpack-plugin: registry.npmmirror.com/html-webpack-plugin/5.5.0_webpack@5.74.0
-  rimraf: registry.npmmirror.com/rimraf/3.0.2
-  webpack: registry.npmmirror.com/webpack/5.74.0_webpack-cli@4.10.0
-  webpack-cli: registry.npmmirror.com/webpack-cli/4.10.0_ab58687d37ee52acb975995ff60cbd8a
-  webpack-dev-server: registry.npmmirror.com/webpack-dev-server/4.11.1_ed7de2690da194b35567e1e94055cb2c
+  .:
+    specifiers:
+      cross-env: ^7.0.3
+      html-webpack-plugin: ^5.5.0
+      npm-run-all: ^4.1.5
+      rimraf: ^3.0.2
+      ts-loader: ^9.4.1
+      typescript: ^4.8.4
+      webpack: ^5.74.0
+      webpack-cli: ^4.10.0
+      webpack-dev-server: ^4.11.1
+    dependencies:
+      npm-run-all: registry.npmmirror.com/npm-run-all/4.1.5
+      ts-loader: registry.npmmirror.com/ts-loader/9.4.1_typescript@4.8.4+webpack@5.74.0
+      typescript: registry.npmmirror.com/typescript/4.8.4
+    devDependencies:
+      cross-env: registry.npmmirror.com/cross-env/7.0.3
+      html-webpack-plugin: registry.npmmirror.com/html-webpack-plugin/5.5.0_webpack@5.74.0
+      rimraf: registry.npmmirror.com/rimraf/3.0.2
+      webpack: registry.npmmirror.com/webpack/5.74.0_webpack-cli@4.10.0
+      webpack-cli: registry.npmmirror.com/webpack-cli/4.10.0_ab58687d37ee52acb975995ff60cbd8a
+      webpack-dev-server: registry.npmmirror.com/webpack-dev-server/4.11.1_ed7de2690da194b35567e1e94055cb2c
 
 packages:
 
