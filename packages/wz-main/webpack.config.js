@@ -1,13 +1,16 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+import path, { dirname } from 'path'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import url, { fileURLToPath } from 'url'
 
-module.exports = function () {
+const _filename = fileURLToPath(import.meta.url)
+const _dirname = dirname(_filename)
+export default function () {
     return {
-        entry: `${__dirname}/src/index.js`,
+        entry: `${_dirname}/src/index.js`,
         mode: 'development',
         output: {
             filename: '[name].js',
-            path: path.resolve(__dirname, 'dist')
+            path: path.resolve(_dirname, 'dist')
         },
         devServer: {
             hot: true,
@@ -17,7 +20,7 @@ module.exports = function () {
         cache: false,
         plugins: [
             new HtmlWebpackPlugin({
-                template: `${__dirname}/public/template.html`
+                template: `${_dirname}/public/template.html`
             })
         ]
     }
