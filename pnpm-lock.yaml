@@ -52,10 +52,10 @@ importers:
       webpack-cli: registry.npmmirror.com/webpack-cli/4.10.0_vnmgq7jx5zjkzolvtfp7mdf5ri
       webpack-dev-server: registry.npmmirror.com/webpack-dev-server/4.11.1_5v66e2inugklgvlh4huuavolfq
 
-  packages/wz-editor:
+  packages/editor:
     specifiers: {}
 
-  packages/wz-main:
+  packages/home:
     specifiers:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -63,7 +63,7 @@ importers:
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
 
-  packages/wz-user:
+  packages/users:
     specifiers: {}
 
 packages:
