@@ -9,7 +9,7 @@
     "preinstall": "npx only-allow pnpm",
     "build": "run-s build-main",
     "lint": "eslint --cache .",
-    "build-main": "pnpm --filter @wz/main dev",
+    "build-main": "pnpm --filter @wz/home dev",
     "start": "npx webpack serve --config=scripts/build/start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
