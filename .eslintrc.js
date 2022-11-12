@@ -4,17 +4,13 @@ module.exports = {
     plugins: ["react", "react-hooks", "import"],
     parserOptions: {
         sourceType: 'module',
-        ecmaVersion: 2018,
+        ecmaVersion: 2021,
+        // 该配置会导致eslintrc无效, 但目前没找到解决方案
+        // requireConfigFile: false,
         // 指示使用哪些其他语言的功能
         ecmaFeatures: {
             "jsx": true
         },
-        babelOptions: {
-            presets: ["next/babel"],
-            caller: {
-                supportsTopLevelAwait: true
-            }
-          }
     },
     env: {
         "browser": true,
