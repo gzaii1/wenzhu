@@ -58,7 +58,7 @@
     "*": [
       "prettier --write --cache --ignore-unknown"
     ],
-    "packages/*/{src,types}/**/*.js": [
+    "packages/*/src/webpack.config.js": [
       "eslint --cache --fix"
     ],
     "packages/*/{src,types}/**/*.ts": [
