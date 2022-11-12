@@ -1,7 +1,7 @@
 import path, { dirname } from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import { fileURLToPath } from 'url'
-console.log(__dirname)
+
 const _filename = fileURLToPath(import.meta.url)
 const _dirname = dirname(_filename)
 export default function () {
