@@ -6,17 +6,32 @@
   "main": "index.js",
   "scripts": {
     "dev": "rimraf dist && npx webpack serve",
-    "build": "rimraf dist && npm run lint && run-s build-bundle build-types",
+    "build": "rimraf dist && npx webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "guohan",
   "license": "ISC",
   "dependencies": {
+    "@wz/editor": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.19",
+    "postcss-loader": "^7.0.1",
+    "style-loader": "^3.3.1",
     "ts-loader": "^9.4.1",
     "typescript": "^4.8.4",
     "webpack": "^5.75.0",
